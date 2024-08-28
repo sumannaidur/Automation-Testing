@@ -1,0 +1,31 @@
+INFO     root:test_script.py:94 Starting Test Case 1: Navigating to home page
+INFO     root:test_script.py:96 ACTION: Opened home page: https://www.reliancedigital.in/
+INFO     root:test_script.py:100 SUCCESS: Homepage loaded successfully
+INFO     root:test_script.py:110 Starting Test Case 2: Title verification
+INFO     root:test_script.py:112 ACTION: Opened home page: https://www.reliancedigital.in/
+INFO     root:test_script.py:116 SUCCESS: Title verified: Online Electronic Shopping Store in India - Reliance Digital
+INFO     root:test_script.py:126 Starting Test Case 3: Handle popup if present
+INFO     root:test_script.py:128 ACTION: Opened home page: https://www.reliancedigital.in/
+INFO     root:test_script.py:83 No popup to handle
+INFO     root:test_script.py:132 SUCCESS: Handled popup successfully if present
+INFO     root:test_script.py:142 Starting Test Case 4: Login process
+INFO     root:test_script.py:144 ACTION: Opened home page: https://www.reliancedigital.in/
+INFO     root:test_script.py:83 No popup to handle
+INFO     root:test_script.py:152 ACTION: Clicked login button
+INFO     root:test_script.py:80 Popup closed successfully
+INFO     root:test_script.py:158 ACTION: Entered mobile number: 9538998293
+INFO     root:test_script.py:83 No popup to handle
+INFO     root:test_script.py:163 ACTION: Clicked proceed button
+INFO     root:test_script.py:83 No popup to handle
+INFO     root:test_script.py:178 ACTION: OTP entered successfully.
+INFO     root:test_script.py:83 No popup to handle
+INFO     root:test_script.py:186 ACTION: Clicked login button
+INFO     root:test_script.py:193 SUCCESS: Login successful
+INFO     root:test_script.py:207 Starting Test Case 5: Select your pin code
+INFO     root:test_script.py:209 ACTION: Opened home page: https://www.reliancedigital.in/
+INFO     root:test_script.py:83 No popup to handle
+ERROR    root:test_script.py:70 Element not clickable: //span[contains(text(),'Select Pin Code')]
+INFO     root:test_script.py:244 Starting Test Case 6: Find store
+INFO     root:test_script.py:246 ACTION: Opened home page: https://www.reliancedigital.in/
+INFO     root:test_script.py:83 No popup to handle
+ERROR    root:test_script.py:70 Element not clickable: //span[contains(text(),'Find Store')]
