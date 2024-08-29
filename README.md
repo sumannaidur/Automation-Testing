@@ -28,14 +28,14 @@ This project is an automated testing suite developed using Selenium and PyTest f
 - **JSON**: For configuration management, storing URLs, user credentials, and other necessary data.
 
 ## Project Structure
-project_root/
-│
-├── config/
-│   └── config.json          # Configuration file with URLs, credentials, and other settings
-│
-├── logs/
-│   └── test.log             # Log file generated during test execution
-│
+**project_root/**
+**│**
+**├── config/**
+**│   └── config.json          # Configuration file with URLs, credentials, and other settings**
+**│**
+**├── logs/**
+**│   └── test.log             # Log file generated during test execution**
+**│**
 ├── tests/
 │   └── test_script.py       # The main test script using Selenium and PyTest
 │
