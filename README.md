@@ -28,24 +28,24 @@ This project is an automated testing suite developed using Selenium and PyTest f
 - **JSON**: For configuration management, storing URLs, user credentials, and other necessary data.
 
 ## Project Structure
-**project_root/**
-**│**
-**├── config/**
-**│   └── config.json          # Configuration file with URLs, credentials, and other settings**
-**│**
-**├── logs/**
-**│   └── test.log             # Log file generated during test execution**
-**│**
-**├── tests/**
-**│   └── test_script.py       # The main test script using Selenium and PyTest**
-**│**
-**├── requirements.txt         # Dependencies required for the project**
-**│**
-**└── README.md                # Documentation for the project**
+**project_root/**/
+**│**/
+**├── config/**/
+**│   └── config.json          # Configuration file with URLs, credentials, and other settings**/
+**│**/
+**├── logs/**/
+**│   └── test.log             # Log file generated during test execution**/
+**│**/
+**├── tests/**/
+**│   └── test_script.py       # The main test script using Selenium and PyTest**/
+**│**/
+**├── requirements.txt         # Dependencies required for the project**/
+**│**/
+**└── README.md                # Documentation for the project**/
 
 ## How to Use:
 1. Clone the Repository:
-    git clone https://github.com/yourusername/your-repository.git
+    git clone https://github.com/sumannaidur/Automation-Testing.git
 2. Navigate to the Project Directory:
     cd project_root
 3. Install Dependencies:
