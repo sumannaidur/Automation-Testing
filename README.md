@@ -1,78 +1,58 @@
+# Selenium Automation Testing for Reliance Digital Website
 
-# Selenium Automation Test Report
+## Description
 
-This document provides a summary of the automated test cases executed using Selenium.
+This project is an automated testing suite developed using Selenium and PyTest for the Reliance Digital website. The test suite is designed to verify the functionality and user experience of the site, ensuring that key features work as expected. The tests simulate user interactions such as navigating the website, logging in, searching for products, managing the shopping cart, applying filters, and more.
 
-## Test Execution Summary
+## Prerequisites
+- **Reliance Digital Account**: Before running the automation tests, ensure that you have created an account on the Reliance Digital website. This is required for testing login functionality, managing the wishlist, adding addresses, and other account-related features.
 
-### Test Case 1: Navigating to Home Page
-- **Action**: Opened home page: https://www.reliancedigital.in/
-- **Result**: Homepage loaded successfully
+## Features
+- **Automated Navigation**: Tests for loading the home page and verifying the title.
+- **Login Automation**: Tests for the login functionality, including OTP verification.
+- **Location-Based Testing**: Automated selection of delivery pin codes and verification of serviceability.
+- **Search Functionality**: Tests for searching products and verifying search results.
+- **Cart Management**: Tests for adding and removing products from the shopping cart.
+- **Wishlist Management**: Tests for adding and removing products from the wishlist.
+- **Filter Application**: Automated tests for applying and clearing filters like price, brand, and battery capacity.
+- **Sorting Functionality**: Tests for sorting products by price (high to low).
+- **Address Management**: Automated tests for adding and deleting addresses.
+- **Account Management**: Tests for accessing and verifying account details like credits and wishlist.
+- **Logout and Error Handling**: Tests for logging out and handling invalid login attempts.
 
-### Test Case 2: Title Verification
-- **Action**: Verified page title
-- **Expected Title**: Online Electronic Shopping Store in India - Reliance Digital
-- **Result**: Title verified successfully
+## Technologies Used
+- **Python**: Programming language used for scripting.
+- **Selenium WebDriver**: For automating web browser interactions.
+- **PyTest**: For organizing and running test cases.
+- **Logging**: To capture and record the execution process and any errors encountered.
+- **JSON**: For configuration management, storing URLs, user credentials, and other necessary data.
 
-### Test Case 3: Login Process
-- **Action**: Entered mobile number and OTP, clicked login
-- **Result**: Login successful
+## Project Structure
+project_root/
+│
+├── config/
+│   └── config.json          # Configuration file with URLs, credentials, and other settings
+│
+├── logs/
+│   └── test.log             # Log file generated during test execution
+│
+├── tests/
+│   └── test_script.py       # The main test script using Selenium and PyTest
+│
+├── requirements.txt         # Dependencies required for the project
+│
+└── README.md                # Documentation for the project
 
-### Test Case 4: Select Your Pin Code
-- **Action**: Selected and applied pin code 560078
-- **Result**: Pin code updated successfully
-
-### Test Case 5: Find a Store Near Me
-- **Action**: Opened 'Find a Store' page, entered pin code, and found store details
-- **Result**: Store details found - Digital Xpress Mini, Kumarswamy Layout, Bangalore
-
-### Test Case 6: Search for a Product
-- **Action**: Entered 'smartphones' in the search bar and searched
-- **Result**: Search results loaded successfully
-
-### Test Case 7: Add to Cart After Search
-- **Action**: Added the specified product to cart
-- **Result**: Product added to cart successfully
-
-### Test Case 8: Remove from Cart
-- **Action**: Removed the product from the cart
-- **Result**: Product removed from cart successfully
-
-### Test Case 9: Apply Filters Functionality
-- **Action**: Applied and cleared filters for price, brand, and battery capacity
-- **Result**: Filters applied and cleared successfully
-
-### Test Case 10: Add to Wishlist
-- **Action**: Added a product to the wishlist
-- **Result**: Product added to wishlist successfully
-
-### Test Case 11: Sort by Price (High to Low)
-- **Action**: Sorted items by price from high to low
-- **Result**: Items sorted successfully
-
-### Test Case 12: Remove from Wishlist
-- **Action**: Removed an item from the wishlist
-- **Result**: Item removed from wishlist successfully
-
-### Test Case 13: Navigate to 'My Credits' Page
-- **Action**: Navigated to 'My Credits' page
-- **Result**: Available balance displayed correctly
-
-### Test Case 14: Add New Address
-- **Action**: Added a new shipping address
-- **Result**: New address added successfully
-
-### Test Case 15: Delete Address
-- **Action**: Deleted an existing address
-- **Result**: Address deleted successfully
-
-### Test Case 16: Logout
-- **Action**: Logged out from the account
-- **Result**: Logout successful
-
-### Test Case 17: Invalid Login
-- **Action**: Entered invalid mobile number
-- **Result**: Correct error message displayed for invalid mobile number
-
-## Conclusion
-All test cases passed successfully, demonstrating the functionality of the Reliance Digital web page.
+## How to Use:
+1.Clone the Repository:
+    git clone https://github.com/yourusername/your-repository.git
+2.Navigate to the Project Directory:
+    cd project_root
+3.Install Dependencies:
+    pip install -r requirements.txt
+4.Update the Configuration:
+    Modify the config/config.json file with your details (mobile number).
+5.Run the Tests:
+    pytest tests/test_script.py
+6.View Logs:
+    Check the logs/test.log file for detailed logs of the test execution.
