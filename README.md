@@ -44,15 +44,15 @@ This project is an automated testing suite developed using Selenium and PyTest f
 - **└── README.md                # Documentation for the project**
 
 ## How to Use:
-1.Clone the Repository:
+- 1.Clone the Repository:
     git clone https://github.com/yourusername/your-repository.git
-2.Navigate to the Project Directory:
+- 2.Navigate to the Project Directory:
     cd project_root
-3.Install Dependencies:
+- 3.Install Dependencies:
     pip install -r requirements.txt
-4.Update the Configuration:
+- 4.Update the Configuration:
     Modify the config/config.json file with your details (mobile number).
-5.Run the Tests:
+- 5.Run the Tests:
     pytest tests/test_script.py
-6.View Logs:
+- 6.View Logs:
     Check the logs/test.log file for detailed logs of the test execution.
